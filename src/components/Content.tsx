@@ -163,7 +163,7 @@ export function Content({ formData, updateFormData }: ContentProps) {
 </Button>
               </div>
               <div className="flex flex-col gap-2">
-                {form.watch("buttons").map((button, index) => {
+                {form.watch("buttons")?.map((button, index) => {
                   return (
                     <div
                       className="flex gap-1 items-center justify-between"

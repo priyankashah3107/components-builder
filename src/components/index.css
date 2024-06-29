@@ -1,0 +1,39 @@
+.head {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.para {
+  font-size: 1.5rem;
+  font-weight: 800;
+  /* background-color: #b2d71b9e; */
+}
+
+.ani {
+  white-space: nowrap;
+  overflow: hidden;
+   /* Adds a cursor */
+  animation: typing 4s steps(30, end), cursor 0.4s step-end infinite alternate;
+}
+
+/* Cursor Blinking */
+@keyframes cursor {
+  50% { border-color: transparent; }
+}
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .head {
+    font-size: 2rem;
+  }
+
+  .para {
+    font-size: 0.8rem;
+  }
+}
